@@ -16,7 +16,6 @@ jobs:
 
       - name: Update Sumbodules
         run: |
-          git pull --recurse-submodules
           git submodule update --init --recursive
 
       - name: Commit update

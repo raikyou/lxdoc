@@ -1,7 +1,7 @@
 [submodule "personal"]
 	path = personal
-	url = https://github.com/yomea/lx-doc
+	url = https://github.com/yomea/lx-doc.git
 	branch = personal
 [submodule "lx-doc"]
 	path = lx-doc
-	url = https://github.com/wanglin2/lx-doc
+	url = https://github.com/wanglin2/lx-doc.git
