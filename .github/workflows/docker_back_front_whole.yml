@@ -1,4 +1,4 @@
-name: Docker image build and push
+name: Docker build back_front_whole
 
 on:
   workflow_dispatch:
@@ -8,6 +8,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
+  BRANCH: back_front_whole
   
 jobs:
   build-and-push:
@@ -53,5 +54,5 @@ jobs:
           context: .
           file: Dockerfile
           push: true
-          tags: ${{ env.REGISTRY }}/${{ github.repository }}:latest
-          
+          tags: ${{ env.REGISTRY }}/${{ github.repository }}:${{ env.BRANCH }}
+          build-args: BRANCH=${{ env.BRANCH }}

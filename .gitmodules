@@ -5,3 +5,7 @@
 [submodule "lx-doc"]
 	path = lx-doc
 	url = https://github.com/wanglin2/lx-doc.git
+[submodule "back_front_whole"]
+	path = back_front_whole
+	url = https://github.com/yomea/lx-doc.git
+	branch = back_front_whole
